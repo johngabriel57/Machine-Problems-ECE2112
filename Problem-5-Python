@@ -1,0 +1,27 @@
+import numpy as np
+from math import pi
+from math import sin
+import matplotlib.pyplot as plt
+n = np.arange(0,200)
+x = eval(input("Enter x(n): "))
+x = np.sin(x)
+x2 = x*(n+1)
+x3 = x*(n+2)
+x4 = x*(n-1)
+x5 = x*(n-2)
+for i in n:
+    if i == 0:
+        y = -1.5*x + 2*x2 - 0.5*x3
+        plt.grid()
+        plt.plot(x,color='r')
+        plt.plot(y,color='b')
+    elif i > 0 and i <= 198:
+        y = 0.5*x - 0.5*x4
+        plt.grid()
+        plt.plot(x,color='r')
+        plt.plot(y,color='b')
+    elif i == 199:
+        y = 1.5*x - 2*x4 + 0.5*x5
+        plt.grid()
+        plt.plot(x,color='r')
+        plt.plot(y,color='b')
