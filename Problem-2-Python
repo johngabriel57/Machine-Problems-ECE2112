@@ -3,7 +3,7 @@ import numpy as np
 
 n1 = np.arange(0,10)
 y1 = n1**2 - 7
-p1 = plt.plot(n1,y1,label='test')
+p1 = plt.stem(n1,y1,label='F1')
 n2 = np.arange(10,100)
 y2 = (n2-10)**2 - 7
-p2 = plt.plot(n2,y2,label='test 2')
+p2 = plt.stem(n2,y2,label='F2')
