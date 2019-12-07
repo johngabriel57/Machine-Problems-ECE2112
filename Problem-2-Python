@@ -4,6 +4,6 @@ import numpy as np
 n1 = np.arange(0,10)
 y1 = n1**2 - 7
 p1 = plt.plot(n1,y1,label='test')
-n2 = np.arange(11,100)
+n2 = np.arange(10,100)
 y2 = (n2-10)**2 - 7
 p2 = plt.plot(n2,y2,label='test 2')
