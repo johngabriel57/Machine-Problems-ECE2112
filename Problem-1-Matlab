@@ -1,0 +1,9 @@
+n1 = 0:9;
+x1 = n1.^2 - 7;
+n2 = 10:99;
+x2 = (n2-10).^2 - 7;
+stem(x1, '-ro','linewidth',1,'markersize',7)
+hold on
+stem(x2, '-b.','linewidth',1)
+grid on
+legend('f(n) = n <= 9','f(n) = n >= 10')
